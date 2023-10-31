@@ -1,0 +1,10 @@
+FROM golang:1.20
+WORKDIR /app
+COPY ./ ./
+COPY ./furrow ./furrow
+COPY ./jobs ./jobs
+COPY ./broker ./broker
+COPY ./cmds ./cmds
+COPY ./build ./build
+RUN go mod download
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/build furrow.go

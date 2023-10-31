@@ -11,6 +11,12 @@ var (
 	commitID  string = "XYZ"
 )
 
+// Job is for passing jobs from reader to worker
+type Job struct {
+        ctx context.Context
+        job *furrow.Job
+}
+
 type Broker interface {
 	// Close connection to broker
 	Close()

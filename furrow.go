@@ -33,12 +33,6 @@ var (
 	publishMetrics string
 )
 
-// Job is for passing jobs from reader to worker
-type Job struct {
-	ctx context.Context
-	job *furrow.Job
-}
-
 func init() {
 	flag.StringVar(&dockerEndpoint, "docker-host", "unix:////var/run/docker.sock", "Address to Docker host")
 	flag.StringVar(&beanstalkHost, "beanstalk-host", "beanstalk:11300", "Address and port to beanstalkd")
