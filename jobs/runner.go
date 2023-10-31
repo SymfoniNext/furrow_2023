@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/SymfoniNext/furrow/broker"
-	"github.com/SymfoniNext/furrow/furrow"
+	"github.com/SymfoniNext/furrow_2023/broker"
+	"github.com/SymfoniNext/furrow_2023/furrow"
 
 	"context"
 

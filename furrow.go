@@ -9,9 +9,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/SymfoniNext/furrow/broker"
-	"github.com/SymfoniNext/furrow/furrow"
-	"github.com/SymfoniNext/furrow/jobs"
+	"github.com/SymfoniNext/furrow_2023/broker"
+	"github.com/SymfoniNext/furrow_2023/furrow"
+	"github.com/SymfoniNext/furrow_2023/jobs"
 
 	log "github.com/sirupsen/logrus"
 
