@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SymfoniNext/furrow_2023/furrow"
+	"github.com/SymfoniNext/furrow/furrow"
 
 	"github.com/namsral/flag"
 

@@ -6,7 +6,7 @@ import (
 
 	"context"
 
-	"github.com/SymfoniNext/furrow_2023/furrow"
+	"github.com/SymfoniNext/furrow/furrow"
 
 	docker "github.com/fsouza/go-dockerclient"
 )

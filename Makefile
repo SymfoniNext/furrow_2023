@@ -1,5 +1,5 @@
 TARGET = _furrow
-IMAGE = symfoni/furrow_2023
+IMAGE = symfoni/furrow
 GITCOMMIT = `git rev-parse --short HEAD`
 DATE = `date`
 
@@ -18,7 +18,7 @@ test:
 
 
 build: test
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags "-X 'github.com/SymfoniNext/furrow_2023/furrow.buildDate=$(DATE)' -X github.com/SymfoniNext/furrow_2023/furrow.commitID=$(GITCOMMIT) -w -extld ld -extldflags -static" -x -o $(TARGET) .
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags "-X 'github.com/SymfoniNext/furrow/furrow.buildDate=$(DATE)' -X github.com/SymfoniNext/furrow/furrow.commitID=$(GITCOMMIT) -w -extld ld -extldflags -static" -x -o $(TARGET) .
 
 docker: build
 	docker build -t $(IMAGE):$(GITCOMMIT) .
