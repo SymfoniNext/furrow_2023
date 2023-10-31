@@ -1,4 +1,4 @@
-module furrow.go
+module furrow_2023.go
 
 go 1.18
 
